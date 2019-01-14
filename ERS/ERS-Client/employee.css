@@ -1,0 +1,46 @@
+
+ #a_label {
+    position: absolute;
+    top: 40px;
+    left: 800px;
+}
+#inputAmount {
+   position: absolute;
+   top: 70px;
+   left: 800px;
+   width: 400px;
+}
+#d_label {
+   position: absolute;
+   top: 110px;
+   left: 800px;
+}
+#inputDescription {
+  position: absolute;
+  top: 140px;
+  left: 800px;
+  width: 400px;
+}
+#t_label {
+   position: absolute;
+   top: 260px;
+   left: 800px;
+}
+#inputType {
+  position: absolute;
+  top: 290px;
+  left: 800px;
+  width: 400px;
+}
+#button1 {
+  position: absolute;
+  top: 330px;
+  left: 800px;
+  width: 400px;
+}
+#button_cancel {
+  position: absolute;
+  top: 380px;
+  left: 800px;
+  width: 400px;
+}

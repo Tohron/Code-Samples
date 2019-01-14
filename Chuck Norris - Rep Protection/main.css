@@ -1,0 +1,155 @@
+body {
+    background-size:cover;
+    background-image: url('./texas-big-bend-national-park-skies-over-desert-rocks.jpg');
+    background-color:#ffaa44;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+}
+
+#holder {
+    position: absolute;
+    background-color:rgba(255, 0, 0, 0.0);
+    bottom: 0px;
+    right: 0px;  
+    left: 0px;
+    top: 0px;
+}
+
+.message {
+    text-align: center;
+
+    width: 245px;
+    /*height:110px;*/
+    /*line-height: 110px;*/
+    /*opacity: 1.0;*/
+
+    position: absolute;
+}
+
+#label1 {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.basic {
+    border-style: dashed;
+    border-width: 4px;
+    background-color:rgba(76, 76, 255, 0.6);
+    border-color: #0000ff;
+}
+
+.intermediate {
+    border-style: dashed;
+    border-width: 6px;
+    background-color:rgba(76, 255, 76, 0.6);
+    border-color: #00ff00;
+}
+
+.advanced {
+    border-style: dashed;
+    border-width: 8px;
+    background-color:rgba(255, 76, 255, 0.6);
+    border-color: #bb00ff;
+}
+
+.hit {
+    border-style: dashed;
+    border-width: 4px;
+    background-color:rgba(122, 122, 122, 0.4);
+    border-color: #444444;
+}
+.kicked {
+    border-style: dashed;
+    border-width: 6px;
+    background-color:rgba(255, 00, 00, 0.4);
+    border-color: #990000;
+}
+
+#chuck {
+    text-align: center;
+
+    width: 100px;
+    height:100px;
+    background-size:cover;
+    background-image: url('./Base.png');
+
+    z-index: 10;
+    position: absolute;
+}
+
+#rep {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    bottom: 40px;
+    left: 190px;  
+    background-image: url('./RepBar.png');
+    height: 60px;
+    line-height: 50px;
+    width: 260px;
+    z-index: 20;
+}
+#repspan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#score {
+    position: absolute;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    bottom: 40px;
+    left: 20px;
+    background-image: url('./ScoreHolder.png');
+    height: 140px;
+    line-height: 110px;
+    width: 140px;
+    z-index: 20;
+}
+#scorespan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#dom_back {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-image: url('./DomBack.png');  
+    height: 254px;
+    width: 40px;
+    z-index: 20;
+}
+#dom_front {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;  
+    background-image: url('./DomBar.png');
+    height: 0px;
+    width: 36px;
+    z-index: 22;
+}
+
+#kickback {
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+    right: 5px;
+    background-color: #510000;  
+    height: 8px;
+    z-index: 12;
+}
+#kickfront {
+    position: absolute;
+    bottom: -3px;
+    left: 7px;
+    width: 85px;
+    background-color: #ff0000;
+    height: 6px;
+    z-index: 14;
+}

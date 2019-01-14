@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Employee Reimbursement Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="table.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="employee.css" />
+    <script src="employee.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+      
+</head>
+<body>
+    <form id="form-logout" onsubmit="logout(event)">
+        <label id="user_label">Logged in as: -----</label>
+        <button id="button_l" type="button" onclick="logout()">Log Out</button>
+    </form>
+    <table id="content_table">
+        <tr><td>
+        <table id="e-table" class="table table-fixed">
+            <thead>
+                <tr>
+                    <th class="c1">Amount</th> <th class="c2">Type</th> <th class="c3">Submitted</th> <th class="c4">Resolved</th> <th class="c5">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Waiting for Database...</td></tr>
+            </tbody>
+        </table>
+            
+        </td>
+
+        <td id="reimb-info" class="outercell">
+            <!-- The buttons and fields on this form must be enabled/disabled based on whether create/cancel reimbursement is pressed -->
+            <form id="form-signin" onsubmit="blank(event)">
+                <label id="a_label">Amount($)</label>
+                <input type="number" id="inputAmount" class="form-control" placeholder="0" required>
+                <label id="d_label">Description</label>
+                <textarea id="inputDescription" rows="4" cols="50"></textarea>
+                <label id="t_label">Reimbursement Type</label>
+                <select id="inputType">
+                    <option selected="selected" value="BUSINESS">BUSINESS</option>
+                    <option value="TRAVEL">TRAVEL</option>
+                    <option value="PARKING">PARKING</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+                
+                <button id="button1" class="btn btn-lg btn-primary btn-block" type="button" onclick="create()">Create Reimbursement</button>
+                <button id="button_cancel" class="btn btn-lg btn-primary btn-block" type="button" onclick="cancel()">Cancel</button>
+            </form>
+        </td></tr>
+    </table>
+</body>
+</html>
